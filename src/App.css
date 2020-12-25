@@ -1,38 +1,80 @@
 .App {
-  text-align: center;
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+@font-face {
+  font-family: 'Rubik';
+  src: local('Rubik'), url(./fonts/Rubik-VariableFont_wght.ttf) format('truetype');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.social {
+  position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
 }
 
-.App-header {
-  background-color: #282c34;
+.App-header-col {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
   min-height: 100vh;
+
+  background-color: #E5E5E5;
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-shrink: 0;
+  flex-basis: 50%;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  z-index: 1;
 }
 
-.App-link {
-  color: #61dafb;
+.main-col {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 75%;
+  
+  /* identical to box height */
+  color: #5D24FF;
+
+  text-shadow: -10px -10px 30px rgba(93, 36, 255, 0.25), 10px 10px 30px rgba(93, 36, 255, 0.25);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main-text-top-row {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc(12.5vmin);
+  display:flex;
+  flex-basis: 75%;
+  width: calc(100px + 60vmin);
+  flex-direction: row;
+  flex-shrink: 0;
 }
+
+.main-text-bottom-row {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc(12.5vmin);
+  display:flex;
+  flex-basis: 75%;
+  flex-direction: row;
+  flex-shrink: 0;
+}
+
+.spacer {
+  flex-grow: 1;
+}
+
+.option-bar {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  margin-top: 10vmin;
+}
+

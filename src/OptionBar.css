@@ -1,0 +1,11 @@
+.option-bar {
+    display: flex;
+    flex-basis: 76%;
+    width: 80vw;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+a {
+    text-decoration: none;
+}

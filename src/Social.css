@@ -1,0 +1,14 @@
+.circle {
+  display: inline-block;
+  margin-top: 2vmin;
+  margin-bottom: 2vmin;
+  margin-left: 3vw;
+  background-position: 50% 50%;
+  background-size: cover;
+  overflow: hidden;
+  height: 5vmin;
+  width: 5vmin;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+}

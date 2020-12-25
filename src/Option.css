@@ -1,0 +1,12 @@
+.button {
+    background: rgb(102, 134, 240);
+    opacity: 1.0;
+    width: 15.25vw;
+    height: 5vmin;
+    border-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.8vmin;
+}

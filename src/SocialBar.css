@@ -1,0 +1,7 @@
+.soc-bar {
+    position: absolute;
+    top: 30vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}

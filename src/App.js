@@ -1,25 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
+import OptionBar from './OptionBar.js';
+import React from 'react';
+import SocialBar from './SocialBar.js';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <div className="App">
+
+        <header className="App-header-col">
+          <div className='main-col'>
+            <div className='main-text-top-row'>
+              <div className='hey'>
+                Hey,
+              </div>
+              <div className='spacer'></div>
+            </div>
+            <div className='main-text-bottom-row'>
+              <div className='spacer'></div>
+              <div className='vlad'>
+                I'm Vlad!
+              </div>
+            </div>
+          </div>
+          <OptionBar className='option-bar' options={['Introduction', 'Experience', 'Projects', 'Skills', 'Contact Me']} links={['/experience','/experience','/experience','/experience','/experience']}></OptionBar>
+
+        </header>
+        <SocialBar className='social'></SocialBar>
+
+      </div>
+    );
+  }
 }
 
 export default App;
